@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="modulo_04.ej_13_navigation.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_hellowFragment"
+            app:destination="@id/hellowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hellowFragment"
+        android:name="modulo_04.ej_13_navigation.HellowFragment"
+        android:label="fragment_hellow"
+        tools:layout="@layout/fragment_hellow" >
+        <action
+            android:id="@+id/action_hellowFragment_to_wrongFragment4"
+            app:destination="@id/wrongFragment4" />
+        <action
+            android:id="@+id/action_hellowFragment_to_successFragment3"
+            app:destination="@id/successFragment3" />
+        <argument
+            android:name="nombreJugador"
+            app:argType="string"
+            android:defaultValue="Don Manuel Acevedo Acevedo Acevedo" />
+    </fragment>
+    <fragment
+        android:id="@+id/wrongFragment4"
+        android:name="modulo_04.ej_13_navigation.WrongFragment"
+        android:label="fragment_wrong"
+        tools:layout="@layout/fragment_wrong" >
+        <action
+            android:id="@+id/action_wrongFragment4_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment3"
+        android:name="modulo_04.ej_13_navigation.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" >
+        <action
+            android:id="@+id/action_successFragment3_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+</navigation>

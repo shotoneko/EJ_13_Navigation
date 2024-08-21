@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EJ_13_Navigation</string>
+    <string name="titulo_app">Trivia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Bienvenido a Logo Trivia, ingresa tu nombre para comenzar.</string>
+    <string name="btn_welcome">Comenzar</string>
+    <string name="tv_question">¿A qué logo pertenece la imagen?</string>
+    <string name="rb1">Pertenece a Facebook</string>
+    <string name="rb2">Pertenece a Twitter</string>
+    <string name="rb3">Pertenece a Whatsap</string>
+    <string name="rb4">Pertenece a Instagram</string>
+    <string name="btn_hellow">Enviar Respuesta</string>
+    <string name="btn_wrong">Intentalo otra vez</string>
+    <string name="btn_atras">Regresar al comienzo</string>
+
+</resources>
